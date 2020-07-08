@@ -1287,11 +1287,17 @@ body:not(.ms-aside-left-open) .ms-aside-toggler .ms-toggler-bar {
   padding-right: 350px;
 }
 
+.side-nav .menu-item a:hover {
+  background-color: #74788d;
+  color: #ffffff;
+  transition: .5s;
+}
+
 .side-nav ul {
   list-style-type: none;
   list-style: none;
   padding-left: 0;
-  background: #556ee6;
+  background: #232a40;
 }
 
 .ms-nav-item form.ms-add-task-block .form-control {
@@ -1321,6 +1327,7 @@ body:not(.ms-aside-left-open) .ms-aside-toggler .ms-toggler-bar {
 
 .side-nav ul li.menu-item {
   padding: 0;
+  margin-bottom: 5px;
 }
 
 .side-nav .menu-item a {
@@ -1373,6 +1380,9 @@ body:not(.ms-aside-left-open) .ms-aside-toggler .ms-toggler-bar {
   color: #556ee6;
 }
 
+.side-nav li.menu-item ul li a.active:hover {
+  color: #ffffff;
+}
 
 .side-nav li.menu-item ul li a {
   color: #4e4e4e;
@@ -8458,7 +8468,7 @@ body:not(.ms-settings-open) .ms-settings-toggle:hover {
 
 .ms-modal-header-radius-0 {
   border-radius: 0px;
-  background-color: #556ee6;
+  background-color: #232a40;
 }
 
 .ms-modal-dialog-width {
