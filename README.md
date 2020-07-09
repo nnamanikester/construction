@@ -18,3 +18,4 @@ A Html and css contruction dashboard
 [] Monitor
 [X] Login
 [X] Register
+[] Profile
