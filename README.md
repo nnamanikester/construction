@@ -13,7 +13,7 @@ A Html and css contruction dashboard
 - [x] Task
 - [x] Project
 - [ ] Report
-- [ ] Files
+- [x] Files
 - [x] Monitor
 - [x] Login
 - [x] Register
