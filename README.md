@@ -9,13 +9,11 @@ A Html and css contruction dashboard
 [X] Dashboard
 [X] Blank
 [X] Chat
-[] Inventory
+[X] Inventory
 [X] Task
 [X] Project
 [] Report
-[] Task 2
-[] Add New Task
 [] Monitor
 [X] Login
 [X] Register
-[] Profile
+[X] Profile

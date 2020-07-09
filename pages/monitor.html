@@ -35,6 +35,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico" />
+    <script src="../assets/js/Chart.bundle.min.js"></script>
   </head>
 
   <body class="ms-body ms-aside-left-open ms-primary-theme ms-has-quickbar">
@@ -294,115 +295,83 @@
           </ol>
         </nav>
         <div class="row">
-          <!-- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            PAGE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            CONTENT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            GOES
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            HERE\
-
-
-
-
-
-
-
-
-
-
-            \
-
-
-
-
-
-
-
-
-
-            
-          -->
+          <div class="col-xl-6 col-md-12">
+            <div class="ms-panel">
+              <div class="ms-panel-header">
+                <h6>Inventory Statistics</h6>
+              </div>
+              <div class="ms-panel-body">
+                <canvas id="bar-chart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6 col-md-12">
+            <div class="ms-panel">
+              <div class="ms-panel-header">
+                <h6>Pie Chart</h6>
+              </div>
+              <div class="ms-panel-body">
+                <canvas id="pie-chart"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            // Change BarChart Data Here
+            var barChart = new Chart(document.getElementById("bar-chart"), {
+              type: "bar",
+              data: {
+                labels: ["2017", "2020", "2018", "2019"],
+                datasets: [
+                  {
+                    label: "Inventory",
+                    backgroundColor: [
+                      "#556ee6",
+                      "#232a40",
+                      "#556ee6",
+                      "#232a40",
+                    ],
+                    data: [2478, 5267, 1734, 3384],
+                  },
+                ],
+              },
+              options: {
+                legend: { display: false },
+                title: {
+                  display: true,
+                  text: "Inventory Statistics",
+                },
+              },
+            });
+
+            //Pie Chart
+            // CHane Pie Chart Data Here
+            new Chart(document.getElementById("pie-chart"), {
+              type: "pie",
+              data: {
+                labels: ["2017", "2020", "2018", "2019"],
+                datasets: [
+                  {
+                    label: "Inventory",
+                    backgroundColor: [
+                      "#141433",
+                      "#f7b11b",
+                      "#ff6c60",
+                      "#08bf6f",
+                    ],
+                    data: [2478, 5267, 734, 784],
+                  },
+                ],
+              },
+              options: {
+                title: {
+                  display: true,
+                  text: "Inventory Statistics",
+                },
+              },
+            });
+          </script>
         </div>
       </div>
     </main>
@@ -1011,6 +980,7 @@
     <script src="../assets/js/perfect-scrollbar.js"></script>
     <script src="../assets/js/jquery-ui.min.js"></script>
     <!-- Global Required Scripts End -->
+
     <!-- Constuction Dashboard By Kester core JavaScript -->
     <script src="../assets/js/framework.js"></script>
     <!-- Settings -->
