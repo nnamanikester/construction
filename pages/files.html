@@ -35,7 +35,6 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon.ico" />
-    <script src="../assets/js/Chart.bundle.min.js"></script>
   </head>
 
   <body class="ms-body ms-aside-left-open ms-primary-theme ms-has-quickbar">
@@ -296,87 +295,593 @@
             <li class="breadcrumb-item">
               <a href="#"><i class="material-icons">home</i> Dashboard</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Monitor</li>
+            <li class="breadcrumb-item active" aria-current="page">Files</li>
           </ol>
         </nav>
         <div class="row">
-          <div class="col-xl-6 col-md-12">
-            <div class="ms-panel">
-              <div class="ms-panel-header">
-                <h6>Inventory Statistics</h6>
+          <div class="ms-panel col-12">
+            <div class="ms-panel-body">
+              <ul
+                class="nav nav-tabs col-12 tabs-bordered d-flex nav-justified"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <a
+                    href="#tab1"
+                    aria-controls="tab1"
+                    class="active show"
+                    role="tab"
+                    data-toggle="tab"
+                  >
+                    All
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#tab2"
+                    aria-controls="tab2"
+                    role="tab"
+                    data-toggle="tab"
+                  >
+                    Documents
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#tab3"
+                    aria-controls="tab3"
+                    role="tab"
+                    data-toggle="tab"
+                  >
+                    Photos
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#tab4"
+                    aria-controls="tab4"
+                    role="tab"
+                    data-toggle="tab"
+                  >
+                    Videos
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-content col-12">
+            <div role="tabpanel" class="tab-pane active show fade in" id="tab1">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-pdf fa-4x text-danger"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.pdf</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-excel fa-4x text-success"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.exl</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-word fa-4x text-primary"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.doc</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-image fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">image-name.jpg</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-video fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">video-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-word fa-4x text-primary"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.doc</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="col-md-12 text-center">
+                    <div class="ms-panel col-12">
+                      <div class="ms-panel-body pt-5">
+                        <i
+                          class="fa fa-cloud-upload-alt mt-5 fa-6x text-disabled"
+                        ></i>
+                        <p class="text-disabled my-4">Drag & Drop Files</p>
+                        <button class="btn btn-primary">Upload file</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="ms-panel-body">
-                <canvas id="bar-chart"></canvas>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab2">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-pdf fa-4x text-danger"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.pdf</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-excel fa-4x text-success"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.exl</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-word fa-4x text-primary"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.doc</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-pdf fa-4x text-danger"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.pdf</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-excel fa-4x text-success"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.exl</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-file-word fa-4x text-primary"></i>
+                          <br />
+                          <span class="text-disabled">document-...e.doc</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="col-md-12 text-center">
+                    <div class="ms-panel col-12">
+                      <div class="ms-panel-body pt-5">
+                        <i
+                          class="fa fa-cloud-upload-alt mt-5 fa-6x text-disabled"
+                        ></i>
+                        <p class="text-disabled my-4">Drag & Drop Files</p>
+                        <button class="btn btn-primary">Upload file</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab3">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-image fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">image-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-image fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">image-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-image fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">image-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-image fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">image-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-image fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">image-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-image fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">image-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="col-md-12 text-center">
+                    <div class="ms-panel col-12">
+                      <div class="ms-panel-body pt-5">
+                        <i
+                          class="fa fa-cloud-upload-alt mt-5 fa-6x text-disabled"
+                        ></i>
+                        <p class="text-disabled my-4">Drag & Drop Files</p>
+                        <button class="btn btn-primary">Upload file</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="tab4">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-video fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">video-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-video fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">video-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-video fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">video-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-video fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">video-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-video fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">video-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                      <div class="ms-panel col-12">
+                        <div class="ms-panel-body">
+                          <i class="fa fa-video fa-4x text-disabled"></i>
+                          <br />
+                          <span class="text-disabled">video-name.mp4</span>
+                        </div>
+                        <div class="row justify-content-end px-3 pb-3">
+                          <a href="#"><i class="fa fa-download mx-2"></i></a>
+                          <a href="#"><i class="fa fa-share-alt mx-2"></i></a>
+                          <a href="#"><i class="fa fa-trash-alt mx-2"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="col-md-12 text-center">
+                    <div class="ms-panel col-12">
+                      <div class="ms-panel-body pt-5">
+                        <i
+                          class="fa fa-cloud-upload-alt mt-5 fa-6x text-disabled"
+                        ></i>
+                        <p class="text-disabled my-4">Drag & Drop Files</p>
+                        <button class="btn btn-primary">Upload file</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-xl-6 col-md-12">
-            <div class="ms-panel">
-              <div class="ms-panel-header">
-                <h6>Pie Chart</h6>
-              </div>
-              <div class="ms-panel-body">
-                <canvas id="pie-chart"></canvas>
-              </div>
-            </div>
-          </div>
+          <!-- 
 
-          <script>
-            // Change BarChart Data Here
-            var barChart = new Chart(document.getElementById("bar-chart"), {
-              type: "bar",
-              data: {
-                labels: ["2017", "2020", "2018", "2019"],
-                datasets: [
-                  {
-                    label: "Inventory",
-                    backgroundColor: [
-                      "#556ee6",
-                      "#232a40",
-                      "#556ee6",
-                      "#232a40",
-                    ],
-                    data: [2478, 5267, 1734, 3384],
-                  },
-                ],
-              },
-              options: {
-                legend: { display: false },
-                title: {
-                  display: true,
-                  text: "Inventory Statistics",
-                },
-              },
-            });
 
-            //Pie Chart
-            // CHane Pie Chart Data Here
-            new Chart(document.getElementById("pie-chart"), {
-              type: "pie",
-              data: {
-                labels: ["2017", "2020", "2018", "2019"],
-                datasets: [
-                  {
-                    label: "Inventory",
-                    backgroundColor: [
-                      "#141433",
-                      "#f7b11b",
-                      "#ff6c60",
-                      "#08bf6f",
-                    ],
-                    data: [2478, 5267, 734, 784],
-                  },
-                ],
-              },
-              options: {
-                title: {
-                  display: true,
-                  text: "Inventory Statistics",
-                },
-              },
-            });
-          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            PAGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            CONTENT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            GOES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            HERE\
+
+
+
+
+
+
+
+
+
+
+            \
+
+
+
+
+
+
+
+
+
+            
+          -->
         </div>
       </div>
     </main>
@@ -985,7 +1490,6 @@
     <script src="../assets/js/perfect-scrollbar.js"></script>
     <script src="../assets/js/jquery-ui.min.js"></script>
     <!-- Global Required Scripts End -->
-
     <!-- Constuction Dashboard By Kester core JavaScript -->
     <script src="../assets/js/framework.js"></script>
     <!-- Settings -->
