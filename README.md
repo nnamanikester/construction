@@ -12,11 +12,9 @@ A Html and css contruction dashboard
 [] Inventory
 [X] Task
 [X] Project
-[] Share
 [] Report
 [] Task 2
 [] Add New Task
 [] Monitor
-[] Login
-[] Register
-[] Password Reset
+[X] Login
+[X] Register
