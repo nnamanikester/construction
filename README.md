@@ -6,14 +6,15 @@ A Html and css contruction dashboard
 #232a40 sec
 #74788d hover
 
-[X] Dashboard
-[X] Blank
-[X] Chat
-[X] Inventory
-[X] Task
-[X] Project
-[] Report
-[] Monitor
-[X] Login
-[X] Register
-[X] Profile
+- [x] Dashboard
+- [x] Blank
+- [x] Chat
+- [x] Inventory
+- [x] Task
+- [x] Project
+- [] Report
+- [] Files
+- [x] Monitor
+- [x] Login
+- [x] Register
+- [x] Profile
