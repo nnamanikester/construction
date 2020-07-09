@@ -12,8 +12,8 @@ A Html and css contruction dashboard
 - [x] Inventory
 - [x] Task
 - [x] Project
-- [] Report
-- [] Files
+- [ ] Report
+- [ ] Files
 - [x] Monitor
 - [x] Login
 - [x] Register
